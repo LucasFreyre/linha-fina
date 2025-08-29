@@ -1,0 +1,132 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    background: #8fb5c0;
+    font-family: "Bebas Neue";
+    padding: 30px 20px;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    color: white;
+
+}
+
+
+header input {
+    width: 600px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+header .input {
+    position: relative;
+}
+
+header .input::after {
+    content: "";
+    position: absolute;
+    background-image: url(search_24dp_000_FILL0_wght400_GRAD0_opsz24.svg);
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    right: 10px;
+    top: 25%;
+}
+
+.icons{
+    font-size: 1.5em;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+.produtos-p{
+    cursor: pointer;
+    position: relative;
+}
+.carrinho:hover{
+    transition: fill .2s;
+    fill: white;
+}
+.carrinho{
+    cursor: pointer;
+}
+.produtos-p::after{
+    transition: .5s;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    bottom: 0;
+    left: 0;
+}
+.produtos-p:hover::after{
+    width: 100%;
+}
+
+.produtos-a{
+    color: white;
+    text-decoration: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.foto {
+    width: 150px;
+}
+
+.precoRiscado {
+    color: red;
+    text-decoration: line-through;
+}
+
+.precoComprar {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: end;
+}
+
+.oferta-item {
+    margin-right: 20px;
+    width: 300px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    font-family: "Bebas Neue";
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.precoReal{
+    font-size: 2em;
+}
+.title{
+    font-size: .8em;
+}
+.produtos-container{
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+header a{ 
+    color: white;
+    text-decoration: none;
+}
+button{
+    border: none;
+    background: transparent;
+}

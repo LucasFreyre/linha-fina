@@ -1,0 +1,191 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    background: #8fb5c0;
+    font-family: "Bebas Neue";
+    padding: 30px 20px;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    color: white;
+
+}
+
+header input {
+    width: 600px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+header .input {
+    position: relative;
+}
+
+header .input::after {
+    content: "";
+    position: absolute;
+    background-image: url(search_24dp_000_FILL0_wght400_GRAD0_opsz24.svg);
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    right: 10px;
+    top: 25%;
+}
+
+.icons{
+    font-size: 1.5em;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+.produtos-p{
+    cursor: pointer;
+    position: relative;
+}
+.carrinho:hover{
+    transition: fill .2s;
+    fill: white;
+}
+.carrinho{
+    cursor: pointer;
+}
+.produtos-p::after{
+    transition: .5s;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    bottom: 0;
+    left: 0;
+}
+.produtos-p:hover::after{
+    width: 100%;
+}
+
+.produtos-a{
+    color: white;
+    text-decoration: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.promover {
+    padding: 5px;
+    font-size: 2em;
+    font-family: "Bebas Neue";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ofertas {
+    padding: 20px;
+}
+
+.oferta {
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    margin-top: 20px;
+}
+
+.casual {
+    width: 100%;
+    color: white;
+    padding: 10px;
+    background: #8fb5c0;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.foto {
+    width: 150px;
+}
+
+.precoRiscado {
+    color: red;
+    text-decoration: line-through;
+}
+
+.precoComprar {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: end;
+}
+
+.oferta-item {
+    margin-right: 20px;
+    width: 300px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    font-family: "Bebas Neue";
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.precoReal{
+    font-size: 2em;
+}
+.title{
+    font-size: .8em;
+}
