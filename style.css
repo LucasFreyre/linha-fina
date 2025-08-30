@@ -39,13 +39,9 @@ header .input::after {
     top: 25%;
 }
 
-.icons{
-    font-size: 1.5em;
-    align-items: center;
-    display: flex;
-    gap: 10px;
-}
+
 .produtos-p{
+    font-size: 1.5em;
     cursor: pointer;
     position: relative;
 }

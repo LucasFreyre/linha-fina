@@ -107,3 +107,22 @@ main{
 .descricao{
     font-size: .8em;
 }
+.produtos-p::after{
+    transition: .5s;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    bottom: 0;
+    left: 0;
+}
+.produtos-p:hover::after{
+    width: 100%;
+}
+
+.produtos-a{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
