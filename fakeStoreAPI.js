@@ -15,6 +15,7 @@ function mostrarProdutos(lista) {
     oferta.innerHTML = ""
     lista.forEach(product => {
         oferta.innerHTML += `
+            <button data-id="${product.id}" class="ver-produto">
             <div class="oferta-item">
                 <div class="casual">
                     <p>Casual</p>
@@ -29,7 +30,18 @@ function mostrarProdutos(lista) {
                     <p>Comprar</p>
                 </div>
             </div>
+            </button>
         `
+    })
+    const botoes = document.querySelectorAll(".ver-produto")
+    botoes.forEach(botao => {
+        botao.addEventListener("click", () => {
+            const id = botao.dataset.id
+            const produtoSelecionado = lista.find(p => p.id == id)
+            localStorage.setItem("produtoSelecionado", JSON.stringify(produtoSelecionado))
+
+            window.location.href = "produto.html"
+        })
     })
 }
 

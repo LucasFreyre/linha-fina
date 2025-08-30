@@ -140,6 +140,11 @@ header .input::after {
     margin-top: 20px;
 }
 
+.oferta button{
+    background: none;
+    border: none;
+}
+
 .casual {
     width: 100%;
     color: white;
