@@ -190,3 +190,25 @@ header .input::after {
 .title{
     font-size: .8em;
 }
+@media (max-width: 490px) {
+    .carousel-container{
+        height: 30vh;
+    }
+    header input{
+        width: 150px;
+        padding: 5px;
+    }
+    header .input::after{
+        background-image: url();
+    }
+    header h1{
+        font-size: 1em;
+    }
+    .oferta{
+        text-align: center;
+        display:block;
+    }
+    .ver-produto{
+        margin: 10px;
+    }
+}
